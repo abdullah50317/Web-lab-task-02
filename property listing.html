@@ -1,0 +1,109 @@
+<html>
+<head>
+<title>Property Listing Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        max-width: 700px;
+        margin: 40px auto;
+        padding: 20px;
+        background-color: #f4f6f8;
+        color: #222;
+        line-height: 1.6;
+    }
+    h1 {
+        text-align: center;
+        color: #003366;
+    }
+    label {
+        display: block;
+        font-weight: bold;
+        margin-top: 12px;
+    }
+    input, select, textarea {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    input[type="checkbox"] {
+        width: auto;
+        margin-right: 5px;
+    }
+    input[type="submit"] {
+        width: auto;
+        padding: 10px 20px;
+        margin-top: 20px;
+        background-color: #003366;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+<form>
+    <h1>ZRK Real Estate & Builder</h1>
+
+    <label>Owner Name</label>
+    <input type="text" placeholder="Enter owner name" required>
+
+    <label>Email</label>
+    <input type="email" placeholder="Enter email" required>
+
+    <label>Phone</label>
+    <input type="tel" placeholder="03XX-XXXXXXX" required>
+
+    <label>Property Type</label>
+    <select>
+        <option>Select Property Type</option>
+        <option>House</option>
+        <option>Apartment</option>
+        <option>Villa</option>
+        <option>Commercial</option>
+        <option>Plot</option>
+    </select>
+
+    <label>City</label>
+    <input list="cities" placeholder="Enter city">
+    <datalist id="cities">
+        <option value="Islamabad">
+        <option value="Rawalpindi">
+        <option value="Lahore">
+        <option value="Karachi">
+        <option value="Peshawar">
+        <option value="Wah Cantt">
+        <option value="Taxila">
+    </datalist>
+
+    <label>Number of Bedrooms</label>
+    <input type="number" min="0" placeholder="e.g. 3">
+
+    <label>Price (PKR)</label>
+    <input type="number" placeholder="Enter property price">
+
+    <label>Availability Date</label>
+    <input type="date">
+
+    <label>Property Website URL</label>
+    <input type="url" placeholder="https://example.com">
+
+    <label>Property Description</label>
+    <textarea placeholder="Describe your property..."></textarea>
+
+    <label>Upload Property Images</label>
+    <input type="file" accept="image/*" multiple>
+
+    <label>Property Features</label>
+    <input type="checkbox"> Parking
+    <input type="checkbox"> Swimming Pool
+    <input type="checkbox"> Garden
+    <input type="checkbox"> Security
+    <input type="checkbox"> Garage
+    <input type="checkbox"> Wi-Fi
+
+    <input type="submit" value="List Property">
+</form>
+</body>
+</html>
