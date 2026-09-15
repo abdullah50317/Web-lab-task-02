@@ -1,0 +1,110 @@
+<html>
+<head>
+<title>Job Application Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        max-width: 700px;
+        margin: 40px auto;
+        padding: 20px;
+        background-color: #f4f6f8;
+        color: #222;
+        line-height: 1.6;
+    }
+    h1 {
+        text-align: center;
+        color: #003366;
+    }
+    label {
+        display: block;
+        font-weight: bold;
+        margin-top: 12px;
+    }
+    input, select, textarea {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    input[type="radio"] {
+        width: auto;
+        margin-right: 5px;
+    }
+    input[type="submit"],
+    input[type="reset"] {
+        width: auto;
+        padding: 10px 20px;
+        margin-top: 20px;
+        margin-right: 10px;
+        background-color: #003366;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+<form>
+    <h1>CUST  Developers </h1>
+    <label>Applicant Name</label>
+    <input type="text" placeholder="Enter your name" required>
+
+    <label>Email</label>
+    <input type="email" placeholder="Enter your email" required>
+
+    <label>Phone Number</label>
+    <input type="tel" placeholder="03XX-XXXXXXX" required>
+
+    <label>Password</label>
+    <input type="password" placeholder="Enter password" required>
+
+    <label>Gender</label>
+    <input type="radio" name="gender"> Male
+    <input type="radio" name="gender"> Female
+    <input type="radio" name="gender"> Other
+
+    <label>Qualification</label>
+    <select>
+        <option>Select Qualification</option>
+        <option>Matric</option>
+        <option>Intermediate</option>
+        <option>Bachelor's</option>
+        <option>Master's</option>
+        <option>PhD</option>
+    </select>
+
+    <label>Job Position</label>
+    <select>
+        <option>Select Position</option>
+        <option>Software Developer</option>
+        <option>Web Developer</option>
+        <option>Data Analyst</option>
+        <option>Graphic Designer</option>
+    </select>
+
+    <label>City</label>
+    <input list="cities" placeholder="Enter your city">
+    <datalist id="cities">
+        <option value="Islamabad">
+        <option value="Rawalpindi">
+        <option value="Wah Cantt">
+    </datalist>
+
+    <label>Expected Salary</label>
+    <input type="number" placeholder="Enter salary in PKR">
+
+    <label>Available Date</label>
+    <input type="date">
+
+    <label>Upload CV</label>
+    <input type="file" accept=".pdf,.doc,.docx">
+
+    <label>Cover Letter</label>
+    <textarea placeholder="Write your cover letter..."></textarea>
+
+    <input type="submit" value="Submit Application">
+    <input type="reset" value="Reset">
+</form>
+</body>
+</html>
