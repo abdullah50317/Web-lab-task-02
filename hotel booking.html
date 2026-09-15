@@ -1,0 +1,111 @@
+<html>
+<head>
+<title>PC Heights Islamabad</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        max-width: 700px;
+        margin: 40px auto;
+        padding: 20px;
+        background-color: #f4f6f8;
+        color: #222;
+        line-height: 1.6;
+    }
+    h1 {
+        text-align: center;
+        color: #003366;
+    }
+    .subtitle {
+        text-align: center;
+        color: #555;
+    }
+    label {
+        display: block;
+        font-weight: bold;
+        margin-top: 12px;
+    }
+    input, select {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    input[type="radio"],
+    input[type="checkbox"] {
+        width: auto;
+        margin-right: 5px;
+    }
+    input[type="submit"],
+    input[type="reset"] {
+        width: auto;
+        padding: 10px 20px;
+        margin-top: 20px;
+        margin-right: 10px;
+        background-color: #003366;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    .footer {
+        text-align: center;
+        margin-top: 20px;
+        color: #666;
+    }
+</style>
+</head>
+<body>
+    <h1>PC Heights Islamabad</h1>
+    <p class="subtitle">Reserve your comfortable stay with us</p>
+    <hr>
+    <form>
+        <label>Guest Name</label>
+        <input type="text" name="guestname" placeholder="Enter your full name" required>
+
+        <label>Email Address</label>
+        <input type="email" name="email" placeholder="example@email.com" required>
+
+        <label>Password</label>
+        <input type="password" name="password" placeholder="Enter your password" required>
+
+        <label>Number of Guests</label>
+        <input type="number" name="guests" min="1" max="10" placeholder="Number of guests">
+
+        <label>Room Type</label>
+        <select name="roomtype">
+            <option value="">-- Select Room Type --</option>
+            <option value="single">Single Room</option>
+            <option value="double">Double Room</option>
+            <option value="deluxe">Deluxe Room</option>
+            <option value="suite">Luxury Suite</option>
+        </select>
+
+        <label>Additional Facilities</label>
+        <input type="checkbox" name="facility" value="wifi"> Free Wi-Fi
+        <input type="checkbox" name="facility" value="breakfast"> Breakfast
+        <input type="checkbox" name="facility" value="parking"> Parking
+        <input type="checkbox" name="facility" value="roomservice"> Room Service
+
+        <label>Gender</label>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="other"> Other
+
+        <label>Check-in Date</label>
+        <input type="date" name="checkin">
+
+        <label>Check-out Date</label>
+        <input type="date" name="checkout">
+
+        <label>Preferred Check-in Time</label>
+        <input type="time" name="checkintime">
+
+        <label>Website / URL</label>
+        <input type="url" name="website" placeholder="https://example.com">
+
+        <input type="submit" value="Book Room">
+        <input type="reset" value="Reset">
+    </form>
+    <div class="footer">Thank you for choosing our hotel</div>
+</body>
+</html>
