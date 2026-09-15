@@ -1,0 +1,102 @@
+<html>
+<head>
+<title>Raang Fest Registration</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        max-width: 700px;
+        margin: 40px auto;
+        padding: 20px;
+        background-color: #f4f6f8;
+        color: #222;
+        line-height: 1.6;
+    }
+    h1 {
+        text-align: center;
+        color: #003366;
+    }
+    label {
+        display: block;
+        font-weight: bold;
+        margin-top: 12px;
+    }
+    input, select, textarea {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    input[type="radio"],
+    input[type="checkbox"] {
+        width: auto;
+        margin-right: 5px;
+    }
+    input[type="submit"],
+    input[type="reset"] {
+        width: auto;
+        padding: 10px 20px;
+        margin-top: 20px;
+        margin-right: 10px;
+        background-color: #003366;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+<form>
+    <h1>Raang Fest Registration</h1>
+
+    <label>Participant Name</label>
+    <input type="text" placeholder="Enter your name" required>
+
+    <label>Email</label>
+    <input type="email" placeholder="Enter your email" required>
+
+    <label>Phone</label>
+    <input type="tel" placeholder="03XX-XXXXXXX" required>
+
+    <label>Gender</label>
+    <input type="radio" name="gender"> Male
+    <input type="radio" name="gender"> Female
+    <input type="radio" name="gender"> Other
+
+    <label>Ticket Type</label>
+    <select>
+        <option>Select Ticket</option>
+        <option>General</option>
+        <option>VIP</option>
+        <option>Family</option>
+    </select>
+
+    <label>Number of Tickets</label>
+    <input type="number" min="1" max="10" placeholder="Enter number">
+
+    <label>Event Date</label>
+    <input type="date">
+
+    <label>Preferred Time</label>
+    <input type="time">
+
+    <label>Food Preference</label>
+    <input type="radio" name="food"> Pakistani
+    <input type="radio" name="food"> Vegetarian
+
+    <label>Facilities</label>
+    <input type="checkbox"> Parking
+    <input type="checkbox"> Seating
+    <input type="checkbox"> Food Stall
+
+    <label>Upload Identification Document</label>
+    <input type="file" accept=".pdf,.jpg,.jpeg,.png" required>
+
+    <label>Comments</label>
+    <textarea placeholder="Write your comments..."></textarea>
+
+    <input type="submit" value="Register">
+    <input type="reset" value="Reset">
+</form>
+</body>
+</html>
